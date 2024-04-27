@@ -57,7 +57,7 @@ cursor: false
 textSelector: '.open-accessibility-text'
 invert: false
 iconSize: 'm',
-localization: ['he']
+localization: ['en']
 ```
 
 ### Langual support

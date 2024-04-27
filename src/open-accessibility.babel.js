@@ -3,7 +3,7 @@
 (function ($) {
 
 
-    var locale  =  @@include('./locale/locale.json');
+    var locale  =  `@@include('./locale/locale.json')`;
     var TEMPLATE = `@@include('./templates/menu.html')`;
 
     var LOCAL_STORAGE_OPTIONS_KEY = 'open-accessibility-config';
@@ -127,7 +127,7 @@
             cursor: false,
             textSelector: '.open-accessibility-text',
             invert: false,
-            localization: ['he'],
+            localization: ['en'],
             iconSize: 'm' // supported sizes are s(mall), m(edium), l(arge)
         };
 

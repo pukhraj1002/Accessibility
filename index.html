@@ -8,8 +8,8 @@
 
     <meta property="og:locale" content="he_IL" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="צריך הנגשה באתר? הכר פרוייקט קוד פתוח עם חזון" />
-    <meta property="og:description" content="מאמץ משותף לסרגל נגישות חינמי ופשוט שכל מפעיל אתר יוכל לשלב בעצמו" />
+    <meta property="og:title" content="Need accessibility on the site? Know a project open-source with a vision." />
+    <meta property="og:description" content="A joint effort to create a free and simple accessibility toolbar that every website operator can integrate independently." />
     <meta property="og:site_name" content="landing page" />
     <meta property="og:image" content="misc/sharing-thumbnail.png" />
 
@@ -24,7 +24,7 @@
                 textSelector: 'div,span,p,a,td,table,tr',
                 isMenuOpened: false,
                 iconSize: 'm',
-                localization: ['he'],
+                localization: ['en'],
             });
         })
     </script>
@@ -149,13 +149,12 @@
             transform: rotate(0deg);
         }
 
-        .section-example:hover {}
+        /*.section-example:hover {}*/
 
         .aligner {
-            /**/
-            /*display: flex;*/
-            /*align-items: center;*/
-            /*justify-content: center;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .aligner-item {
@@ -168,17 +167,17 @@
 
         }
 
-        /*.aligner-item-start {*/
+        .aligner-item-start {
 
-        /*align-self: flex-start;*/
+        align-self: flex-start;
 
-        /*}*/
+        }
 
-        /*.aligner-item-end {*/
+        .aligner-item-end {
 
-        /*align-self: flex-end;*/
+        align-self: flex-end;
 
-        /*}*/
+        }
 
         .highlight {
             background: #000;
@@ -212,19 +211,19 @@
 
         .btn-green span {
             background: -webkit-linear-gradient(left, #add356, #00dfa6);
-            -webkit-background-clip: text;
+            /*-webkit-background-clip: text;*/
             -webkit-text-fill-color: transparent;
         }
 
         .btn-orange span {
             background: -webkit-linear-gradient(left, #ffcb52, #ff451f);
-            -webkit-background-clip: text;
+            /*-webkit-background-clip: text;*/
             -webkit-text-fill-color: transparent;
         }
 
         .btn-blue span {
             background: -webkit-linear-gradient(left, #3dade9, #bf2fcb);
-            -webkit-background-clip: text;
+            /*-webkit-background-clip: text;*/
             -webkit-text-fill-color: transparent;
         }
 
@@ -309,18 +308,16 @@
 
                 <p class="header gap open-accessibility-text">אבל למה?</p>
                 <p class="half open-accessibility-text">
-                    קיים חוק במדינת ישראל המחייב אתרי אינטרנט לספק כלים לאנשים עם מוגבלויות. אתרים חדשים נדרשים מהיום הראשון לספק פתרונות נגישות
-                    ונמצאים בסכנה של תביעה עד לסכום של 75,000 ש"ח אם לא יעשו כלום
-                </p>
+                    The law in Israel requires internet websites to provide tools for people with disabilities. New websites are required from the first day to provide accessibility solutions.
+                    In danger of being sued for up to 75,000 NIS if they do nothing.                </p>
 
 
                 <p class="header gap open-accessibility-text">יש מצב לעזרה?</p>
                 <p class="half open-accessibility-text">
-                    כל אחד יכול לתרום לקוד הפרוייקט ולהפוך אותו ליותר טוב. מצאת באג?
-                    <a class="highlight" href="https://github.com/jossef/open-accessibility/issues" target="_blank">דווח עליו כאן</a>
-                    ; יש לך רעיון למימוש יותר טוב? זורם!!! אני מציע לך לעשות
+                    Everyone can contribute to the project's code and make it better. Did you find a bug?                    <a class="highlight" href="https://github.com/jossef/open-accessibility/issues" target="_blank">Report it here</a>
+                    ; Got any ideas for a better implementation? Go ahead!!! I suggest you do.
                     <a class="highlight" href="https://github.com/jossef/open-accessibility/fork" target="_blank">fork</a>
-                    ולפנק ב
+                    and to indulge in
                     <a class="highlight" href="https://github.com/jossef/open-accessibility" target="_blank">Pull Request</a>
                 </p>
             </div>
@@ -331,24 +328,23 @@
             <div class="aligner-item contribute">
 
                 <p class="header open-accessibility-text">
-                    איך מתחילים?
-                </p>
+                    How do you start?                </p>
                 <p class="open-accessibility-text">
-                    הוסיפו את קטע הקוד הבא שטוען את התוסף אל האתר
+                    Add the following code snippet that loads the plugin into the website.
                 </p>
 
                 <script src="https://gist.github.com/jossef/5069f268f375e8dc33cb6776b423e804.js?file=include.html"></script>
 
 
                 <p class="open-accessibility-text">
-                    ואת הסקריפט הבא שמאתחל את התוסף
+The following script initializes the add-on.
                 </p>
 
                 <script src="https://gist.github.com/jossef/5069f268f375e8dc33cb6776b423e804.js?file=initialize.html"></script>
 
                 <div class="buttons">
                     <a class="btn btn-blue" href="http://codepen.io/Jossef/pen/GNPzzq/" target="_blank">
-                        <span>תראה לי דוגמא</span>
+                        <span>Show me an example.</span>
                     </a>
                 </div>
 
@@ -356,13 +352,13 @@
                 <div class="hover-focus">
 
                     <p class="gap header open-accessibility-text">
-                        התאמה אישית
+                        personalization
                     </p>
 
 
                     <p class="gap open-accessibility-text">
-                        למשל, כך ניתן לשנות מאפיינים כמו את הselector של האלמנטים שמושפעים משינויי גודל טקסט:
-                    </p>
+
+                        For example, this is how you can change properties like the selector of elements affected by changes in text size:                    </p>
 
                     <script src="https://gist.github.com/jossef/5069f268f375e8dc33cb6776b423e804.js?file=initialize-custom.js"></script>
 
@@ -371,10 +367,10 @@
                         <span class="btn btn-orange">
 
                             <a class="" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                                <span>לא מאמין?</span>
+                                <span>I can't believe it?</span>
                             </a>
                             <a style="font-size: 10px" target="_blank" href="http://codepen.io/Jossef/pen/qqLgve">
-                                <span>ועכשיו?</span>
+                                <span>and now?</span>
                             </a>
                         </span>
                     </div>
@@ -386,8 +382,8 @@
                         רשיון
                     </p>
                     <p class="open-accessibility-text">
-                        הקוד משוחרר תחת רשיון Apache V2, תעשו איתו מה שאתם רוצים
-                    </p>
+
+                        The code is released under the Apache License Version 2 (Apache V2), do with it whatever you want.                    </p>
 
                 </div>
 
